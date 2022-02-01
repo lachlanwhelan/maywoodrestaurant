@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap');
+body{
+    background-color: #faf8f1;
+}
+
+.primary-font{
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+.title-font{
+    font-family: 'Abril Fatface', cursive;
+}
+
+.text-one{
+
+}
+
+.text-two{
+
+}
+
+.nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 110px;
+    background-color: #faf8f1;
+}
+
+.nav-logo a{
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+}
+
+.nav-toggle{
+    position: relative;
+    z-index: 1000;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.nav-toggle span{
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    transition: 0.2s ease;
+}
+
+.toggle-one{
+    top: 0;
+}
+
+.toggle-two{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle-three{
+    bottom: 0;
+}
+
+
+
+
+.nav-menu{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #faf8f1;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.nav-menu-item{
+    color: #555;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.order-online-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    background: #06101b;
+    text-align: center;
+    color: #ae8f59;
+    font-size: 18px;
+}
+
+.toggle-on .nav-menu{
+    height: 100vh;
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.nav-toggle.show .toggle-one{
+    transform: translate(3px, 2px) rotate(38deg);
+    transform-origin: 0 0;
+}
+
+.nav-toggle.show .toggle-two{
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+.nav-toggle.show .toggle-three{
+    transform-origin: 0 0;
+    transform: translate(1px, -1px) rotate(-38deg);
+}
+
+
+.footer{
+    min-height: 40vh;
+    background-color: #06101b;
+    color: #ae8f59;
+    padding: 35px;
+}
+
+.footer-divide{
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin: 15px 0;
+}
+
+.footer-group{
+    margin: 20px 0;
+    width: 250px;
+}
+
+.footer-group-title{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer-copyright{
+    margin: 10px 0;
+}
+
+.footer-socials i{
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .footer{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-container{
+        width: 800px;
+        margin: auto;
+    }
+    
+    .footer-top, .footer-bottom{
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
+
+    .footer-top{
+        justify-content: space-between;
+    }
+
+    .footer-bottom{
+        justify-content: space-between;
+    }
+
+    .footer-group:last-child{
+        width: 175px;
+    }
+
+    .footer-group-text{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .nav{
+        height: auto;
+        padding: 50px;
+    }
+
+    .nav-logo a{
+        font-size: 32px;
+    }
+
+    .toggle-on .nav-menu, .nav-menu{
+        position: relative;
+        background-color: transparent;
+        height: auto;
+        overflow: visible;
+        opacity: 1;
+        visibility: visible;
+        flex-direction: row;
+    }
+
+    .nav-menu{
+        margin-left: auto;
+        margin-right: 150px;
+    }
+
+    .nav-menu-item{
+        color: black;
+    }
+
+    
+
+    .link-line{
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        transform: scaleX(0);
+        transition: 0.2s ease;
+    }
+
+    .nav-menu li:hover .link-line{
+        transform: scaleX(1);
+
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+
+    .order-online-link{
+        position: relative;
+        width: 150px;
+    }
+
+    .order-online-link:hover{
+        transition: 0.2s ease;
+        color: white;
+    }
+    
+}
+
+
+
