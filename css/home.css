@@ -1,0 +1,172 @@
+.header-image{
+    background-image: url("/maywoodrestaurant/images/small/creamyseafood.jpg");
+  background-repeat: no-repeat;
+  height: 65vh;
+  background-size: cover;
+}
+
+.header-text-container{
+    text-align: center;
+    color: #ae8f59;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header-text-two{
+    font-size: 14px;
+}
+
+.intro-text{
+    padding: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+}
+
+.intro-text h2{
+    margin-bottom: 20px;
+}
+
+
+.intro-image{
+    background-image: url("/maywoodrestaurant/images/small/roastpork.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35vh;
+}
+
+
+.primary-btn{
+    padding: 10px;
+    width: 200px;
+    margin: 10px auto;
+    background-color: #937737;
+    color: white;
+
+}
+
+.image-banner{
+    background-image: url("/maywoodrestaurant/images/small/seafooddish.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.image-banner-card{
+    display: none;
+}
+
+.menu-prompt-text{
+    margin: 20px auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+.menu-prompt-text h2{
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width:860px){
+    .header-image{
+        background-image: url("/maywoodrestaurant/images/large/creamyseafood.jpg");
+    }
+    
+    
+    .intro-image{
+        height: 45vh;        
+    }
+}
+
+@media only screen and (min-width:1024px){
+
+    .header{
+        display: flex;
+    }
+
+    .header-image{
+        background-attachment: fixed;
+        height: 85vh;
+        width: 90%;
+    }
+
+    .header-text{
+        position: relative;
+    }
+
+    .header-text-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .header-text-line{
+        display: block;
+        width: 1px;
+        height: 350px;
+        background-color: #ae8f59;
+        margin: 75px 0;
+    }
+
+    .header-text-container p{
+        transform: rotate(270deg);
+        font-size: 18px;
+    }
+
+    .header-text-one{
+        width: 150px;
+    }
+
+    
+    .intro{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: 100px 0;
+    }
+
+    .intro-text p {
+        margin: 25px 0;
+    }
+
+    .intro-image{
+        width: 650px;
+        height: 80vh;
+    }
+
+    .menu-prompt-text{
+        display: none;
+    }
+
+    .image-banner{
+        height: 90vh;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-banner-card{
+        text-align: center;
+        display: block;
+        background-color: #faf8f1;
+        padding: 20px 15px;
+        width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-banner-card h2, .image-banner-card p{
+        margin-bottom: 20px;
+    }
+
+    .image-banner-card p{
+        max-width: 300px;
+    }
+    
+}

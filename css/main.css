@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap');
+
 body{
     background-color: #faf8f1;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    padding-top: 120px;
 }
 
 .primary-font{
@@ -12,16 +21,17 @@ body{
     font-family: 'Abril Fatface', cursive;
 }
 
-.text-one{
-
-}
-
-.text-two{
-
+.background-image{
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
 .nav{
     padding: 20px;
+    padding-top: 60px;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +39,6 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    height: 110px;
     background-color: #faf8f1;
 }
 
@@ -167,6 +176,10 @@ body{
     margin-right: 10px;
 }
 
+.title{
+    font-size: 30px;
+}
+
 @media only screen and (min-width: 900px) {
 
     .footer{
@@ -204,9 +217,14 @@ body{
 
 @media only screen and (min-width: 1024px) {
 
+    main{
+        padding-top: 150px;
+    }
+
     .nav{
         height: auto;
         padding: 50px;
+        top: 0;
     }
 
     .nav-logo a{
@@ -255,11 +273,16 @@ body{
     .order-online-link{
         position: relative;
         width: 150px;
+        top: 0;
     }
 
     .order-online-link:hover{
         transition: 0.2s ease;
         color: white;
+    }
+
+    .title{
+        font-size: 45px;
     }
     
 }
