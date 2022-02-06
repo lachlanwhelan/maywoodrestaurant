@@ -7,10 +7,10 @@
     <meta name="description" content=""/>
     <meta name="keywords" content="Restaurant, Food, Cuisine, Bar"/>
     <title>Maywood Restaurant & Bar - Award winning cuisine</title>     
-    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/resets.css"/>
-    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant//css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/resets.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant//css/home.css">
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
 </head>
 <body>
     
@@ -38,7 +38,7 @@
        
     </nav>
 
-    <main style="min-height: 100vh;" >
+    <main>
         <header class="header">
             <div class="header-image"></div>
             <div class="header-text">
@@ -83,7 +83,35 @@
             <form class="reservations-form">
                 <h2 class="title-font title">Reservations</h2>
 
-                
+                <div class="form-input-group">
+                    <input class="form-date form-input" type="date" name="date"/>
+                    <select class="form-time form-input" name="time">
+                        <option>12:30 PM</option>
+                        <option>1:00 PM</option>
+                        <option>1:30 PM</option>
+                        <option>2:00 PM</option>
+                        <option>2:30 PM</option>
+                        <option>3:00 PM</option>
+                        <option>3:30 PM</option>
+                        <option>4:00 PM</option>
+                        <option>4:30 PM</option>
+                        <option>5:00 PM</option>
+                        <option>5:30 PM</option>
+                        <option>6:00 PM</option>
+                        <option>6:30 PM</option>
+                        <option>7:00 PM</option>
+                        <option>7:30 PM</option>
+                    </select>
+                    <select class="form-party form-input" name="party">
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5 People</option>
+                        <option>6 People</option>
+                    </select>
+                    <input class="form-submit primary-btn primary-font" type="submit" value="Book Now"/>
+                </div>
             </form> 
 
             </div>

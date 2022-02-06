@@ -1,5 +1,5 @@
 .header-image{
-    background-image: url("/maywoodrestaurant/images/small/creamyseafood.jpg");
+    background-image: url("/images/small/creamyseafood.jpg");
   background-repeat: no-repeat;
   height: 65vh;
   background-size: cover;
@@ -29,7 +29,7 @@
 
 
 .intro-image{
-    background-image: url("/maywoodrestaurant/images/small/roastpork.jpg");
+    background-image: url("/images/small/roastpork.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 35vh;
@@ -42,11 +42,13 @@
     margin: 10px auto;
     background-color: #937737;
     color: white;
-
+    border: 0;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .image-banner{
-    background-image: url("/maywoodrestaurant/images/small/seafooddish.jpg");
+    background-image: url("/images/small/seafooddish.jpg");
     background-size: cover;
     background-position: center;
     height: 40vh;
@@ -60,15 +62,40 @@
     margin: 20px auto;
     text-align: center;
     max-width: 400px;
+    padding: 10px;
 }
 
 .menu-prompt-text h2{
     margin-bottom: 20px;
 }
 
+.form-input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reservations-form{
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-input{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+
 @media only screen and (min-width:860px){
     .header-image{
-        background-image: url("/maywoodrestaurant/images/large/creamyseafood.jpg");
+        background-image: url("/images/large/creamyseafood.jpg");
     }
     
     
@@ -161,12 +188,38 @@
         align-items: center;
     }
 
-    .image-banner-card h2, .image-banner-card p{
+    .image-banner-card h2, 
+    .image-banner-card p, 
+    .reservations-form h2{
         margin-bottom: 20px;
     }
 
     .image-banner-card p{
         max-width: 300px;
+    }
+
+    .reservations{
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .reservations-form{
+        width: 900px;
+    }
+
+    .form-input-group{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .form-input{
+        max-width: 200px;
+    }
+
+    .form-submit{
+        margin: 10px;
     }
     
 }
