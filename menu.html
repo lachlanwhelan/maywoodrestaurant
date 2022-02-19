@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=""/>
     <meta name="keywords" content="Restaurant, Food, Cuisine, Bar"/>
-    <title>Maywood Restaurant & Bar - Award winning cuisine - Menu</title>     
-    <link rel="stylesheet" type="text/css" href="/css/resets.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <title>Maywood Restaurant & Bar - Award winning cuisine</title>
+    <link rel="icon" type="image/x-icon" href="/maywoodrestaurant/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/resets.css"/>
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/main.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/home.css">
 </head>
 <body>
     
     <nav class="nav">
        
-            <div class="nav-logo"><a class="title-font" href="/">Maywood</a></div>
+            <div class="nav-logo"><a class="title-font" href="/maywoodrestaurant/">Maywood</a></div>
 
             <div class="nav-toggle">
                 <span class="toggle-one"></span>
@@ -24,31 +26,159 @@
             </div>
 
          
-                <ul class="nav-menu primary-font">
-                    <li><a class="nav-menu-item" href="#Reservation">Reservation</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./menu.html">Menu</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./whatson.html">What's On</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./contact.html">Contact</a><span class="link-line"></span></li>
-                </ul>
-                
-                <a href="" class="order-online-link primary-font">Order Online</a>
-          
-
+            <ul class="nav-menu primary-font">
+                <li><a class="nav-menu-item reservation-link" href="#Reservation">Reservation</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/menu">Menu</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/about">About</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/contact">Contact</a><span class="link-line"></span></li>
+            </ul>
+            
+            <a href="/maywoodrestaurant/" class="order-online-link primary-font"><i class="fa fa-phone" aria-hidden="true"></i>  123 456 789</a>
        
     </nav>
 
     <main style="min-height: 100vh;" >
+        <header class="header"> 
+            <div class="header-overlay">
+                <h1 class="title-font title reveal">Menu</h1>
+            </div>
+        </header>
+    
+
+        <div class="menu primary-font reveal">
+            <p class="menu-intro">
+                The menu is a mix of French regional cuisines, and the menu changes with the seasons. Be sure to ask about the daily specials!
+            </p> 
+            
+            <span class="menu-divider"></span>
+            
+            <h1 class="title-font title">
+                Starters
+            </h1>
+
+            <div class="starters reveal">
+                <div class="menu-item">
+                    <p class="menu-item-title">Salmon Canapés</p>
+                    <p>Smoked salmon topped with crème fraîche, dill and capers</p>
+                    <p>$15.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Pork Rillettes</p>
+                    <p>With quick pickle of dried apricots and pistachio crumble</p>
+                    <p>$14.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Provençal Vegetable Tart</p>
+                    <p>With seasonal vegetables</p>
+                    <p>$12.50</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Mini Tartes Flambées</p>
+                    <p>Traditional Alsatian dish made with home-smoked bacon and onions</p>
+                    <p>$12.50</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Goat's Cheese Salad</p>
+                    <p>Served warm with honey and croûtons</p>
+                    <p>$12.50</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Fricassée of Wild Mushrooms</p>
+                    <p>Braised wild mushrooms served with seaweed and liquid nitrogen</p>
+                    <p>$14.50</p>
+                </div>
+            </div>
+
+            <span class="menu-divider"></span>
+            
+
+            <h1 class="title-font title">
+                Mains
+            </h1>
+
+            <div class="mains reveal">
+                <div class="menu-item">
+                    <p class="menu-item-title">Coq au Vin d'Alsace</p>
+                    <p>Chicken cooked in Riesling with onions, mushrooms and herbs</p>
+                    <p>$25.50</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Bouillabaisse</p>
+                    <p>Traditional Provençal fish stew, with shrimp, mussels, clams and monkfish</p>
+                    <p>$26.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Sole Meunière</p>
+                    <p>Pan-fried sole in butter and served with brown butter sauce, parsley and lemon</p>
+                    <p>$28.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Côte de Boeuf</p>
+                    <p>60 days aged rib steak, pepper sauce, fondant potatoes</p>
+                    <p>$31.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Duck à l'Orange</p>
+                    <p>Roasted duck breast with crispy skin and velvety citrus sauce</p>
+                    <p>$26.50</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Pea and Asparagus Risotto</p>
+                    <p>With goat’s cheese, rocket and baby shoot salad</p>
+                    <p>$22.00</p>
+                </div>
+            </div>
+
+            <span class="menu-divider"></span>
+
+            <h1 class="title-font title">
+                Deserts
+            </h1>
+
+            <div class="deserts reveal">
+                <div class="menu-item">
+                    <p class="menu-item-title">Chocolate Macarons</p>
+                    <p>A classic French delicacy, filled with rich chocolate ganache</p>
+                    <p>$12.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Crêpe Suzette</p>
+                    <p>Delicate crêpe in buttery, orange sauce; served flambé</p>
+                    <p>$13.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Praline Cake</p>
+                    <p>Multi-layer praline and chocolate cake with caramel cream cheese</p>
+                    <p>$12.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Tarte Tatin</p>
+                    <p>Sticky caramel sauce with apples, served with whipped cream</p>
+                    <p>$12.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Lemon Tart</p>
+                    <p>zesty lemon tang, creamy custard and topped with meringue</p>
+                    <p>$12.00</p>
+                </div>
+                <div class="menu-item">
+                    <p class="menu-item-title">Trio of Fruit</p>
+                    <p>Blueberries, strawberries, raspberries, plums and passion fruit</p>
+                    <p>$22.00</p>
+                </div>
+            </div>
+        </div>
     </main>
 
 
     <footer class="footer primary-font">
-       <div class="footer-container">
+       <div class="footer-container reveal">
         <div class="footer-top">
             <div class="footer-group">
                 <h3 class="footer-group-title">Address</h3>
                 <p class="footer-group-text">
-                    500 Terry Francois Street
-                    San Francisco, CA 94158
+                    100 King Street <br/>
+                    Newtown, NSW 2042
                 </p>
             </div>
             <div class="footer-group">

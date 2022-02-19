@@ -1,0 +1,25 @@
+.header{
+    background-image: url("/images/small/tableshot.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    position: relative;
+}
+
+.header-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #39393991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-overlay h1{
+    color: white;
+    text-align: center;
+}   

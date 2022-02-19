@@ -1,0 +1,116 @@
+.contact-header{
+    padding: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-header h1{
+    margin: 20px 0;
+}
+
+.contact-form, .form-submit-message{
+    max-width: 85%;
+    margin: 50px auto;
+}
+
+.form-submit-message{
+    text-align: center;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.form-submit-message h1, .form-submit-message p{
+    margin: 20px 0;
+}
+
+.form-group, 
+.form-group input, 
+.form-group textarea{
+    width: 100%;
+}
+
+.form-group{
+    margin: 10px 0;
+}
+
+.form-group input, 
+.form-group textarea{
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 18px;
+    outline: none;
+    padding:10px;
+}
+
+.form-group textarea{
+    height: 250px;
+}   
+
+.form-group.invalid{
+    position: relative;
+}
+
+.form-group.invalid .form-input{
+    border: 1px solid red;
+}
+
+.form-group.invalid::before{
+    content: "!";
+    display: block;
+    background-color: #d92525;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    right: 0;
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.hide-form .contact-form{
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s ease;
+}
+
+.hide-form .form-submit-message{
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    transition: 0.2s ease;
+}
+
+#map{
+    height: 65vh;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .contact-form{
+        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px auto;
+    }
+
+    .half-width{
+        width: 48%;
+    }
+
+    .contact-form .primary-btn{
+        width: 100%;
+    }
+    
+    
+}

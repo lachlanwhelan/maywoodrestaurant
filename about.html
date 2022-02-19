@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=""/>
     <meta name="keywords" content="Restaurant, Food, Cuisine, Bar"/>
-    <title>Maywood Restaurant & Bar - Award winning cuisine - What's On</title>     
-    <link rel="stylesheet" type="text/css" href="/css/resets.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <title>Maywood Restaurant & Bar - Award winning cuisine</title>
+    <link rel="icon" type="image/x-icon" href="/maywoodrestaurant/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/resets.css"/>
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/main.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/home.css">
 </head>
 <body>
     
     <nav class="nav">
        
-            <div class="nav-logo"><a class="title-font" href="/">Maywood</a></div>
+            <div class="nav-logo"><a class="title-font" href="/maywoodrestaurant/">Maywood</a></div>
 
             <div class="nav-toggle">
                 <span class="toggle-one"></span>
@@ -24,34 +26,71 @@
             </div>
 
          
-                <ul class="nav-menu primary-font">
-                    <li><a class="nav-menu-item" href="#Reservation">Reservation</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./menu.html">Menu</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./whatson.html">What's On</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./contact.html">Contact</a><span class="link-line"></span></li>
-                </ul>
-                
-                <a href="" class="order-online-link primary-font">Order Online</a>
-          
-
+            <ul class="nav-menu primary-font">
+                <li><a class="nav-menu-item reservation-link" href="#Reservation">Reservation</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/menu">Menu</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/about">About</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/contact">Contact</a><span class="link-line"></span></li>
+            </ul>
+            
+            <a href="/maywoodrestaurant/" class="order-online-link primary-font"><i class="fa fa-phone" aria-hidden="true"></i>  123 456 789</a>
        
     </nav>
 
     <main style="min-height: 100vh;" >
-        <header>
+       <header class="about-header reveal">
+           <div class="header-text">
+                <p class="primary-font">Our Story</p>
+                <h1 class="title-font title">Welcome to Maywood</h1>
 
-        </header>
+                <p class="primary-font header-paragraph">Chef Patron Joan Smith and Executive Chef François Lemoine have teamed up to open one of the most exciting restaurants in Anytown.</p>
+
+                <p class="primary-font header-paragraph">Our speciality is delicious cuisine created with the ingenuity and passion inspired by the fantastic flavours of France itself. We take great pride in improving upon your favourite French dishes in new and creative ways.</p>
+           </div>
+           <div class="header-images">
+                <div class="header-img"><img src="/images/small/outsiderestaurant.jpg"/></div>
+
+           </div>
+       </header>
+
+
+       <section class="our-kitchen reveal">
+            <div class="kitchen-images">
+                <div class="kitchen-img"><img src="/images/small/kitchenone.jpg"/></div>
+                <div class="kitchen-img"><img src="/images/small/kitchentwo.jpg"/></div>   
+            </div>
+            <div class="kitchen-text">
+                <h1 class="title-font title">The Kitchen</h1>
+
+                <p class="primary-font header-paragraph">Chef Patron Joan Smith and Executive Chef François Lemoine have teamed up to open one of the most exciting restaurants in Anytown.</p>
+
+                <p class="primary-font header-paragraph">Our speciality is delicious cuisine created with the ingenuity and passion inspired by the fantastic flavours of France itself. We take great pride in improving upon your favourite French dishes in new and creative ways.</p>
+            </div>
+       </section>
+
+
+       <section class="our-bar">
+       <div class="our-bar-overlay">
+        <div class="bar-text reveal">
+            <h1 class="title-font title">The Bar</h1>
+
+            <p class="primary-font header-paragraph">Chef Patron Joan Smith and Executive Chef François Lemoine have teamed up to open one of the most exciting restaurants in Anytown.</p>
+
+            <p class="primary-font header-paragraph">Our speciality is delicious cuisine created with the ingenuity and passion inspired by the fantastic flavours of France itself. We take great pride in improving upon your favourite French dishes in new and creative ways.</p>
+        </div>
+       </div>
+       </section>
     </main>
 
 
     <footer class="footer primary-font">
-       <div class="footer-container">
+       <div class="footer-container reveal">
         <div class="footer-top">
             <div class="footer-group">
                 <h3 class="footer-group-title">Address</h3>
                 <p class="footer-group-text">
-                    500 Terry Francois Street
-                    San Francisco, CA 94158
+                    100 King Street <br/>
+                    Newtown, NSW 2042
                 </p>
             </div>
             <div class="footer-group">

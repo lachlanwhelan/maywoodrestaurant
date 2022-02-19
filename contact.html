@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=""/>
     <meta name="keywords" content="Restaurant, Food, Cuisine, Bar"/>
-    <title>Maywood Restaurant & Bar - Award winning cuisine - Contact</title>     
-    <link rel="stylesheet" type="text/css" href="/css/resets.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <title>Maywood Restaurant & Bar - Award winning cuisine</title>
+    <link rel="icon" type="image/x-icon" href="/maywoodrestaurant/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/resets.css"/>
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/main.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/maywoodrestaurant/css/home.css">
 </head>
 <body>
     
     <nav class="nav">
        
-            <div class="nav-logo"><a class="title-font" href="/">Maywood</a></div>
+            <div class="nav-logo"><a class="title-font" href="/maywoodrestaurant/">Maywood</a></div>
 
             <div class="nav-toggle">
                 <span class="toggle-one"></span>
@@ -24,34 +26,70 @@
             </div>
 
          
-                <ul class="nav-menu primary-font">
-                    <li><a class="nav-menu-item" href="#Reservation">Reservation</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./menu.html">Menu</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./whatson.html">What's On</a><span class="link-line"></span></li>
-                    <li><a class="nav-menu-item" href="./contact.html">Contact</a><span class="link-line"></span></li>
-                </ul>
-                
-                <a href="" class="order-online-link primary-font">Order Online</a>
-          
-
+            <ul class="nav-menu primary-font">
+                <li><a class="nav-menu-item reservation-link" href="#Reservation">Reservation</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/menu">Menu</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/about">About</a><span class="link-line"></span></li>
+                <li><a class="nav-menu-item" href="/maywoodrestaurant/contact">Contact</a><span class="link-line"></span></li>
+            </ul>
+            
+            <a href="/maywoodrestaurant/" class="order-online-link primary-font"><i class="fa fa-phone" aria-hidden="true"></i>  123 456 789</a>
        
     </nav>
 
     <main style="min-height: 100vh;" >
-        <header>
-
+        <header class="contact-header reveal">
+            <h1 class="title-font title">Get In Touch</h1>
+            <p class="primary-font">Let's talk 👋 Don't hesitate to reach out with the contact information below, or send a message using the form. To book a table, call us or use the form below.</p>
         </header>
+
+
+        <section class="contact reveal">
+            <form class="contact-form primary-font" action="" method="POST" autocomplete="off">
+                <div class="form-group half-width">
+                    <p>First Name</p>
+                    <input class="form-input" type="text" name="firstname" placeholder=""/>
+                </div>
+                <div class="form-group half-width">
+                    <p>Last Name</p>
+                    <input class="form-input" type="text" name="lastname" placeholder=""/>
+                </div>
+                <div class="form-group">
+                    <p>Email</p>
+                    <input class="form-input" type="text" name="email" placeholder=""/>
+                </div>
+                <div class="form-group">
+                    <p>Subject</p>
+                    <input class="form-input" type="text" name="subject" placeholder=""/>
+                </div>
+                <div class="form-group">
+                    <p>Message</p>
+                    <textarea class="form-input" name="message"></textarea>
+                </div>
+                <input class="form-submit primary-font primary-btn" type="submit" value="Submit"/>
+            </form>
+            <div class="form-submit-message">
+                <h1 class="title-font title">Thank you for your inquiry</h1>
+
+                <p class="primary-font">We will get back to you shortly.</p>
+               
+            </div>
+        </section>
+
+        <!--The div element for the map -->
+         <div id="map"></div>
+
     </main>
 
 
     <footer class="footer primary-font">
-       <div class="footer-container">
+       <div class="footer-container reveal">
         <div class="footer-top">
             <div class="footer-group">
                 <h3 class="footer-group-title">Address</h3>
                 <p class="footer-group-text">
-                    500 Terry Francois Street
-                    San Francisco, CA 94158
+                    100 King Street  <br/>
+                    Newtown, NSW 2042
                 </p>
             </div>
             <div class="footer-group">
@@ -84,6 +122,9 @@
        </div>
     </footer>
     
-<script src="./js/main.js"></script>
+    
+<script src="/maywoodrestaurant/js/main.js"></script>
+<script src="/maywoodrestaurant/js/contact.js"></script> <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsnoPgf7f3-AykG6yWlYO4R1QKL0yoQxQ&callback=initMap" async></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 .header-image{
     background-image: url("/images/small/creamyseafood.jpg");
   background-repeat: no-repeat;
@@ -35,17 +38,6 @@
     height: 35vh;
 }
 
-
-.primary-btn{
-    padding: 10px;
-    width: 200px;
-    margin: 10px auto;
-    background-color: #937737;
-    color: white;
-    border: 0;
-    cursor: pointer;
-    font-size: 16px;
-}
 
 .image-banner{
     background-image: url("/images/small/seafooddish.jpg");
@@ -90,7 +82,79 @@
     background-color: transparent;
     border: 1px solid black;
     font-size: 18px;
+    outline: none;
 }
+
+.reservation-prompt{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.61);
+    z-index: 100;
+    opacity: 0;
+    visibility: visible;
+    height: 0;
+    overflow: hidden;
+}
+
+.prompt-card{
+    height: 360px;
+    background-color: white;
+    padding: 100px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 500px;
+    border-radius: 10px;  
+    position: relative;  
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.prompt-close-btn{
+    border-radius: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.prompt-card i{
+    color:#ae8f59;
+}
+
+.prompt-card .title-font{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.prompt-card .primary-font{
+    margin: 10px 0;
+}
+
+.show-prompt{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+}
+
+.show-prompt .prompt-card{
+    opacity: 1;
+    transform: translate(0);
+    transition: 0.4s ease;
+}
+
 
 
 @media only screen and (min-width:860px){
@@ -105,6 +169,16 @@
 }
 
 @media only screen and (min-width:1024px){
+
+    .nav > *{
+        animation-name: fadeInDown;
+        animation-duration: 0.5s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
 
     .header{
         display: flex;
@@ -222,4 +296,7 @@
         margin: 10px;
     }
     
+    
 }
+
+
