@@ -2,7 +2,7 @@ body{
     position: relative;
 }
 .header-image{
-    background-image: url("/images/small/creamyseafood.jpg");
+    background-image: url("/maywoodrestaurant/images/small/creamyseafood.jpg");
   background-repeat: no-repeat;
   height: 65vh;
   background-size: cover;
@@ -32,7 +32,7 @@ body{
 
 
 .intro-image{
-    background-image: url("/images/small/roastpork.jpg");
+    background-image: url("/maywoodrestaurant/images/small/roastpork.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 35vh;
@@ -40,7 +40,7 @@ body{
 
 
 .image-banner{
-    background-image: url("/images/small/seafooddish.jpg");
+    background-image: url("/maywoodrestaurant/images/small/seafooddish.jpg");
     background-size: cover;
     background-position: center;
     height: 40vh;
@@ -159,7 +159,7 @@ body{
 
 @media only screen and (min-width:860px){
     .header-image{
-        background-image: url("/images/large/creamyseafood.jpg");
+        background-image: url("/maywoodrestaurant/images/large/creamyseafood.jpg");
     }
     
     
