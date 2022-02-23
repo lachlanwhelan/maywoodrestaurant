@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 versions
+*/
+
 .header-text, .kitchen-text, .bar-text{
     text-align: center;
     padding: 10px;
@@ -15,8 +22,13 @@
 
 
 .our-kitchen{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
 }
 
 .kitchen-images .kitchen-img:last-child{
@@ -36,17 +48,29 @@
     right: 0;
     bottom: 0;
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
 }
 
 @media only screen and (min-width: 1024px) {
     .about-header{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .header-text, .header-images{
@@ -67,13 +91,24 @@
     }
 
     .our-kitchen{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction:revert;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:revert;
+                flex-direction:revert;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .kitchen-images{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 

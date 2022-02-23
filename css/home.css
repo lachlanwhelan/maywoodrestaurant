@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 versions
+*/
+
 body{
     position: relative;
 }
@@ -62,10 +69,19 @@ body{
 }
 
 .form-input-group{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .reservations-form{
@@ -77,7 +93,8 @@ body{
 .form-input{
     padding: 10px;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 10px;
     background-color: transparent;
     border: 1px solid black;
@@ -91,9 +108,15 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: rgba(0, 0, 0, 0.61);
     z-index: 100;
     opacity: 0;
@@ -106,10 +129,19 @@ body{
     height: 360px;
     background-color: white;
     padding: 100px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px 20px;
     margin: 10px;
     text-align: center;
@@ -117,7 +149,9 @@ body{
     border-radius: 10px;  
     position: relative;  
     opacity: 0;
-    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+            transform: translateY(-100px);
 }
 
 .prompt-close-btn{
@@ -151,7 +185,11 @@ body{
 
 .show-prompt .prompt-card{
     opacity: 1;
-    transform: translate(0);
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
     transition: 0.4s ease;
 }
 
@@ -171,16 +209,25 @@ body{
 @media only screen and (min-width:1024px){
 
     .nav > *{
-        animation-name: fadeInDown;
-        animation-duration: 0.5s;
-        animation-timing-function: ease;
-        animation-fill-mode: forwards;
-        animation-delay: 1s;
+        -webkit-animation-name: fadeInDown;
+                animation-name: fadeInDown;
+        -webkit-animation-duration: 0.5s;
+                animation-duration: 0.5s;
+        -webkit-animation-timing-function: ease;
+                animation-timing-function: ease;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
         opacity: 0;
-        transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
     }
 
     .header{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -196,10 +243,19 @@ body{
 
     .header-text-container{
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin: 0;
     }
 
@@ -212,7 +268,9 @@ body{
     }
 
     .header-text-container p{
-        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+            -ms-transform: rotate(270deg);
+                transform: rotate(270deg);
         font-size: 18px;
     }
 
@@ -222,8 +280,12 @@ body{
 
     
     .intro{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         width: 95%;
         margin: 100px 0;
     }
@@ -244,9 +306,15 @@ body{
     .image-banner{
         height: 90vh;
         background-attachment: fixed;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .image-banner-card{
@@ -256,10 +324,19 @@ body{
         padding: 20px 15px;
         width: 600px;
         height: 400px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .image-banner-card h2, 
@@ -274,9 +351,15 @@ body{
 
     .reservations{
         min-height: 50vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .reservations-form{
@@ -284,8 +367,13 @@ body{
     }
 
     .form-input-group{
-        flex-direction: row;
-        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .form-input{
