@@ -95,6 +95,7 @@ body{
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+            -webkit-appearance: none;
     margin: 10px;
     background-color: transparent;
     border: 1px solid black;
